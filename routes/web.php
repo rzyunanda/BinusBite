@@ -1,9 +1,11 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
-use Illuminate\Foundation\Application;
-use Illuminate\Support\Facades\Route;
+use App\Models\Menu;
 use Inertia\Inertia;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Foundation\Application;
+use App\Http\Controllers\MenuController;
+use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,11 +19,13 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
-    return Inertia::render('Homepage', [
+    return Inertia::render('Welcome', [
         'title' => 'Homepage',
         'description' => 'Aplikasi Kantin berbasis Web'
     ]);
 });
+
+Route::get('/menu', [MenuController::class, 'index']);
 
 // Route::get('/', function () {
 //     return Inertia::render('Welcome', [
