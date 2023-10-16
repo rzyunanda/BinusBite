@@ -6,9 +6,11 @@
     "license": "MIT",
     "require": {
         "php": "^8.0.2",
+        "almasaeed2010/adminlte": "~3.2",
         "doctrine/dbal": "^3.6",
         "guzzlehttp/guzzle": "^7.2",
         "inertiajs/inertia-laravel": "^0.6.3",
+        "infyomlabs/laravel-ui-adminlte": "^5.1",
         "jzonta/faker-restaurant": "^2.0",
         "laravel/framework": "^9.19",
         "laravel/jetstream": "^3.0",

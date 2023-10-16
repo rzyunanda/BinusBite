@@ -18,14 +18,14 @@ use App\Http\Controllers\ProfileController;
 |
 */
 
-Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'title' => 'Homepage',
-        'description' => 'Aplikasi Kantin berbasis Web'
-    ]);
-});
+// Route::get('/', function () {
+//     return Inertia::render('Welcome', [
+//         'title' => 'Homepage',
+//         'description' => 'Aplikasi Kantin berbasis Web'
+//     ]);
+// });
 
-Route::get('/menu', [MenuController::class, 'index']);
+Route::get('/', [MenuController::class, 'index']);
 
 // Route::get('/', function () {
 //     return Inertia::render('Welcome', [

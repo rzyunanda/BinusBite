@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\MenuCollection;
 use App\Models\Menu;
 use Illuminate\Http\Request;
-use Inertia\Inertia;
 
 class MenuController extends Controller
 {
@@ -15,12 +15,7 @@ class MenuController extends Controller
      */
     public function index()
     {
-        $menu = Menu::all();
-        return Inertia::render('Homepage', [
-            'name' => "Homepage",
-            'description' => "",
-            'menu' => $menu
-        ]);
+        return view("explore");
     }
 
     /**
