@@ -1,9 +1,11 @@
-<div class="w-50 h-100 border-2 border-hitam rounded-xl ">
-    <img src="https://www.dapurkobe.co.id/wp-content/uploads/sate-ayam.jpg" alt="food pict" class="w-50 snap-center pt-4 pl-4 pr-4 rounded">
-    <div class="felx p-4">
-        <h1 class="text-xl font-semibold">Sate Ayam Saus Kacang</h1>
-        <h2>Binus Bekasi</h2>
-        <h1 class="text-right text-xl">Rp20.000,00</h1>
+<div class="w-full">
+    <div class="bg-putih rounded-xl shadow-lg overflow-hidden mb-10 flex justify-center"> 
+        <img class="h-32 w-32 flex-shrink-0" src="https://www.dapurkobe.co.id/wp-content/uploads/sate-ayam.jpg" alt="food pict">
+        <div class="py-6 px-4">
+            <h2 class="mb-1 font-semibold text-sm text-hitam truncate">Sate Ayam Bumbu Kacang</h2>
+            <h3 class="mb-1 text-xs">Binus Brute</h3>
+            <h2 class="text-sm text-kuning-500 font-semibold">Rp20.000</h2>
+            <button class="border-spacing-2 border-hitam font-bold rounded-xs m-1">+</button>
+        </div>
     </div>
-    
 </div>

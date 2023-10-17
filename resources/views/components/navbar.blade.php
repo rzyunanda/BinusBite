@@ -1,4 +1,4 @@
-<header class="bg-putih font-plusjakarta font-semibold shadow-md">
+{{-- <header class="bg-putih font-plusjakarta font-semibold shadow-md">
     <nav class="text-teal-50 flex justify-between items-center h-16 w-[92%] mx-auto">
         <div>
             <img class="w-16" src="https://transjakarta.co.id/wp-content/uploads/logo-transjakarta2-1763927095.png" alt="Transjakarta">
@@ -14,35 +14,34 @@
             </ul>
         </div>
         <div class="flex items-center gap-6">
-            <button class="bg-putih text-hitam px-5 py-2 rounded-full shadow-md border-kuning-500 border-2 transition ease-in-out hover:text-putih hover:bg-kuning-500 duration-300 ">Sign In</button>
+            <button class="bg-putih text-hitam px-5 py-2 rounded-full shadow-md border-kuning-500 border-2 transition ease-in-out hover:text-putih hover:bg-kuning-500 duration-200 ">Sign In</button>
         </div>
     </nav>
+</header> --}}
+
+<header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+    <div class="container">
+        <div class="flex items-center justify-between relative">
+            <div class="px-4">
+                <a href="#home" class="font-bold text-lg text-kuning-500 block py-6">BinusBite</a>
+            </div>
+            <div class="flex items-center px-4">
+                <button id="hamburger" name="hamburger" type="button" class="block absolute right-4">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </div>
 </header>
 
 <script>
-    // window.addEventListener('scroll', function() {
-    //     const header = document.querySelector("header");
-    //     if (window.scrollY > 0) {
-    //         header.classList.add('sticky');
-    //         header.classList.remove('bg-green-500');
-    //         header.classList.add('bg-black');
-    //         header.classList.add('md:bg-red');
-    //         navLinks.classList.add('top-[9%]');
-    //         nav.classList.remove('bg-green-500');
-    //         nav.classList.add('bg-black');
-    //         nav.classList.remove('text-teal-50')
-    //         nav.classList.add('text-black')
-    //         a.classList.add('hover:text-green-500');
-    //     } else {
-    //         header.classList.remove('sticky');
-    //         header.classList.add('bg-green-500');
-    //         header.classList.remove('bg-black');
-    //         header.classList.remove('md:bg-red');
-    //         navLinks.classList.remove('top-[9%]');
-    //     }
-    // });
+
 </script>
 
 <style>
-
+    .hamburger-line {
+        @apply w-[30px] h-[2px] my-2 block bg-hitam;
+    }
 </style>
